@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>User Dashboard | Smart Parking Reservation System</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body onload="loadUserDashboard()">
+
+<header class="header">
+
+<div>
+
+<h1>🚗 Smart Parking Reservation System</h1>
+
+<p id="currentDateTime"></p>
+
+</div>
+
+<div class="header-buttons">
+
+<button onclick="window.location.href='user-reservation.html'">
+📅 Reserve Slot
+</button>
+
+<button onclick="window.location.href='user-parking.html'">
+🅿️ View Parking
+</button>
+
+<button onclick="userLogout()">
+🚪 Logout
+</button>
+
+</div>
+
+</header>
+
+<div class="welcome-card">
+
+<h2 id="welcomeUser">
+👋 Welcome
+</h2>
+
+<p>
+
+Reserve your parking slot and check your reservation status.
+
+</p>
+
+</div>
+
+<div class="dashboard-container">
+
+<div class="card total-card">
+
+<h3>Vehicle Number</h3>
+
+<h2 id="userVehicle">-</h2>
+
+</div>
+
+<div class="card available-card">
+
+<h3>Mobile Number</h3>
+
+<h2 id="userPhone">-</h2>
+
+</div>
+
+<div class="card revenue-card">
+
+<h3>Email</h3>
+
+<h2 id="userEmail">-</h2>
+
+</div>
+
+<div class="card occupied-card">
+
+<h3>Reservation Status</h3>
+
+<h2 id="reservationStatus">Not Reserved</h2>
+
+</div>
+
+</div>
+
+<br>
+
+<div class="dashboard-actions">
+
+<button
+class="manage-btn"
+onclick="window.location.href='user-reservation.html'">
+
+🚗 Reserve Parking Slot
+
+</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

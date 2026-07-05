@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Parking Reservation System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="login-page">
+
+    <div class="login-container">
+
+        <div class="login-card">
+
+            <div class="logo">
+                🚗
+            </div>
+
+            <h1>Smart Parking Reservation System</h1>
+
+            <p class="subtitle">
+                Administrator Login
+            </p>
+
+            <div class="input-group">
+
+                <label>Username</label>
+
+                <input type="text"
+                    id="username"
+                    placeholder="Enter Username">
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Password</label>
+
+                <div class="password-box">
+
+                    <input type="password"
+                        id="password"
+                        placeholder="Enter Password">
+
+                    <span class="show-password"
+                        onclick="togglePassword()">
+
+                        👁
+
+                    </span>
+
+                </div>
+
+            </div>
+
+            <button class="login-btn"
+                onclick="login()">
+
+                🔐 Login
+
+            </button>
+
+            <p id="error" class="error"></p>
+
+            <div class="login-footer">
+
+                <hr>
+
+                <p>
+                    © 2026 Smart Parking Reservation System
+                </p>
+
+                <small>
+                    Version 1.0
+                </small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

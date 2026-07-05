@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>User Reservation | Smart Parking Reservation System</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body onload="loadReservationPage()">
+
+<header class="header">
+
+<div>
+
+<h1>🚗 Smart Parking Reservation System</h1>
+
+<p id="currentDateTime"></p>
+
+</div>
+
+<div class="header-buttons">
+
+<button onclick="window.location.href='user-dashboard.html'">
+
+🏠 Dashboard
+
+</button>
+
+<button onclick="userLogout()">
+
+🚪 Logout
+
+</button>
+
+</div>
+
+</header>
+
+<div class="parking-container">
+
+<div class="form-box">
+
+<h2>📅 Reserve Parking Slot</h2>
+
+<input
+type="text"
+id="userName"
+readonly>
+
+<input
+type="text"
+id="userVehicle"
+readonly>
+
+<input
+type="text"
+id="userPhone"
+readonly>
+
+<select id="userVehicleType">
+
+<option value="">Select Vehicle Type</option>
+
+<option value="Bike">🏍 Bike</option>
+
+<option value="Car">🚗 Car</option>
+
+<option value="Van">🚐 Van</option>
+
+<option value="Truck">🚚 Truck</option>
+
+</select>
+
+<select id="userSlot">
+
+<option value="">Select Parking Slot</option>
+
+<option value="1">Slot 1</option>
+<option value="2">Slot 2</option>
+<option value="3">Slot 3</option>
+<option value="4">Slot 4</option>
+<option value="5">Slot 5</option>
+<option value="6">Slot 6</option>
+<option value="7">Slot 7</option>
+<option value="8">Slot 8</option>
+<option value="9">Slot 9</option>
+<option value="10">Slot 10</option>
+<option value="11">Slot 11</option>
+<option value="12">Slot 12</option>
+<option value="13">Slot 13</option>
+<option value="14">Slot 14</option>
+<option value="15">Slot 15</option>
+<option value="16">Slot 16</option>
+<option value="17">Slot 17</option>
+<option value="18">Slot 18</option>
+<option value="19">Slot 19</option>
+<option value="20">Slot 20</option>
+
+</select>
+
+<button onclick="reserveUserSlot()">
+
+✅ Reserve Slot
+
+</button>
+
+<p
+id="reserveMessage"
+style="margin-top:15px;font-weight:bold;">
+
+</p>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | Smart Parking Reservation System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body onload="loadDashboard()">
+
+<header class="header">
+
+    <div>
+
+        <h1>🚗 Smart Parking Reservation System</h1>
+
+        <p id="currentDateTime"></p>
+
+    </div>
+
+    <div class="header-buttons">
+
+        <button onclick="toggleDarkMode()">
+            🌙 Dark Mode
+        </button>
+
+        <button onclick="logout()">
+            🚪 Logout
+        </button>
+
+    </div>
+
+</header>
+
+<div class="welcome-card">
+
+    <h2>👋 Welcome Administrator</h2>
+
+    <p>
+        Manage parking reservations, approve user bookings,
+        monitor parking slots, search vehicles and generate receipts.
+    </p>
+
+</div>
+
+<div class="dashboard-container">
+
+    <!-- Total Slots -->
+
+    <div class="card total-card">
+
+        <h3>Total Slots</h3>
+
+        <h1 id="totalSlots">20</h1>
+
+    </div>
+
+    <!-- Available Slots -->
+
+    <div class="card available-card">
+
+        <h3>Available Slots</h3>
+
+        <h1 id="availableSlots">20</h1>
+
+    </div>
+
+    <!-- Pending Requests -->
+
+    <div class="card" style="background:linear-gradient(135deg,#FF9800,#F57C00);">
+
+        <h3>Pending Requests</h3>
+
+        <h1 id="pendingRequests">0</h1>
+
+    </div>
+
+    <!-- Occupied Slots -->
+
+    <div class="card occupied-card">
+
+        <h3>Occupied Slots</h3>
+
+        <h1 id="occupiedSlots">0</h1>
+
+    </div>
+
+    <!-- Revenue -->
+
+    <div class="card revenue-card">
+
+        <h3>💰 Total Revenue</h3>
+
+        <h1 id="totalRevenue">₹0</h1>
+
+    </div>
+
+</div>
+
+<div class="dashboard-actions">
+
+    <button
+        class="manage-btn"
+        onclick="window.location.href='parking.html'">
+
+        🚗 Manage Parking
+
+    </button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

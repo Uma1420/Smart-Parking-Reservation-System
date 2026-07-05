@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>User Registration | Smart Parking Reservation System</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="login-page">
+
+<div class="login-container">
+
+<div class="login-card">
+
+<div class="logo">🚗</div>
+
+<h1>User Registration</h1>
+
+<p class="subtitle">
+Create your account to reserve parking slots
+</p>
+
+<form method="POST" action="/register">
+
+<div class="input-group">
+
+<label>Full Name</label>
+
+<input
+type="text"
+name="name"
+id="regName"
+placeholder="Enter Full Name"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Email</label>
+
+<input
+type="email"
+name="email"
+id="regEmail"
+placeholder="Enter Email"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Mobile Number</label>
+
+<input
+type="text"
+name="phone"
+id="regPhone"
+maxlength="10"
+placeholder="Enter Mobile Number"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Vehicle Number</label>
+
+<input
+type="text"
+name="vehicle"
+id="regVehicle"
+placeholder="TN12AB1234"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Password</label>
+
+<input
+type="password"
+name="password"
+id="regPassword"
+placeholder="Create Password"
+required>
+
+</div>
+
+<button type="submit" class="login-btn">
+
+📝 Register
+
+</button>
+
+</form>
+
+<br>
+
+<p>
+
+Already have an account?
+
+<a href="/user-login"
+style="color:white;font-weight:bold;">
+
+Login
+
+</a>
+
+</p>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

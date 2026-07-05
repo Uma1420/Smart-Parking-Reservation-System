@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>User Parking | Smart Parking Reservation System</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body onload="loadParking()">
+
+<header class="header">
+
+<div>
+
+<h1>🚗 Smart Parking Reservation System</h1>
+
+<p id="currentDateTime"></p>
+
+</div>
+
+<div class="header-buttons">
+
+<button onclick="window.location.href='user-dashboard.html'">
+🏠 Dashboard
+</button>
+
+<button onclick="userLogout()">
+🚪 Logout
+</button>
+
+</div>
+
+</header>
+
+<div class="parking-container">
+
+<div class="slots-box" style="width:100%;">
+
+<h2>🅿️ Parking Slots</h2>
+
+<p style="text-align:center;color:#666;margin-bottom:20px;">
+View available and occupied parking slots.
+</p>
+
+<div id="parkingSlots" class="slots-grid">
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
