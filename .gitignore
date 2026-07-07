@@ -10,3 +10,4 @@ venv/
 .vscode/
 
 *.db
+__pycache__/database.cpython-314.pyc
